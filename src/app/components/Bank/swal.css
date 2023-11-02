@@ -1,0 +1,55 @@
+/* Custom styles for Swal radio buttons */
+.swal-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .swal-container div {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .swal-container input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .swal-container label {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  /* Custom styles for Swal buttons */
+  .swal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .swal-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .swal-confirm {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  .swal-cancel {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  .backdrop-loader {
+    position: relative;
+    top: 100%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    /* Add additional styles as needed */
+  }
+  

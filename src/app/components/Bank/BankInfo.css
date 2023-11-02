@@ -1,0 +1,85 @@
+/* BankInfo.css */
+
+/* Apply box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a max-width to limit the component's width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Adjust header styles for smaller screens */
+.bankinfoheader {
+  font-size: 24px;
+}
+
+/* Adjust breadcrumb styles for smaller screens */
+.breadcrumb-item1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Make the table responsive */
+.table-responsive1 {
+  overflow-x: auto;
+}
+
+/* Adjust table styles for smaller screens */
+.table1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table1 th,
+.table1 td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Make the avatar responsive */
+.avatar {
+  height: 60px;
+  width: 60px;
+}
+.backdrop-loader {
+  position: relative;
+  top: 100%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  /* Add additional styles as needed */
+}
+/* Adjust table column widths for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .bankinfoheader {
+    font-size: 20px;
+  }
+
+  .breadcrumb-item1 {
+    display: none;
+  }
+
+  .table-responsive1 {
+    width: 100%;
+  }
+
+  .table1 th,
+  .table1 td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+  }
+}

@@ -1,0 +1,457 @@
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 700px;
+  height: 500px;
+  background: white;
+  color: #343434;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  overflow: auto;
+}
+
+.modalHeader {
+  height: 50px;
+  background: white;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #f35924;
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color: #343434;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+     
+}
+.heading1 {
+  margin: 0;
+  padding: 10px;
+  color: #343434;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: left;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color: #343434;
+  text-align: left;
+}
+
+.modalActions {
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px;
+  padding-top: 0px;
+  border-radius: 8px;
+  border: none;
+  font-size: 40px;
+  color: #13161d;
+  background: #f35a23;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  margin-top: 0px;
+  margin-right: -7px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+
+.closeBtn:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  transform: translate(-4px, 4px);
+}
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-top: 20px;
+}
+.cancelBtn {
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: none;
+  color: #fff;
+  background-color: #ff5722;
+  transition: background-color 0.25s ease;
+}
+
+.cancelBtn:hover {
+  background-color: #f4511e;
+}
+
+.cancelBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.3);
+}
+
+.cancelBtn:active {
+  transform: translateY(1px);
+}
+
+.DownloadBtn {
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: none;
+  color: #fff;
+  background-color: #1a75d6;
+  transition: background-color 0.25s ease;
+}
+
+.DownloadBtn:hover {
+  background-color: #1a75d6;
+}
+
+.DownloadBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.3);
+}
+
+.DownloadBtn:active {
+  transform: translateY(1px);
+}
+
+
+
+.iconsize {
+  font-size: 50px;
+}
+.modalContentMain {
+  font-size: 16px;
+}
+
+.rowContainer,
+.rowContainerCarModal {
+  display: flex; /* Displays the children elements in a row */
+  align-items: center; /* Centers the children elements vertically */
+}
+
+.hundredpadding,
+.hundredpaddingCar {
+  padding-left: 180px;
+}
+.rightcolor {
+  color: #0090e7;
+  font-size: 20px;
+}
+
+.modalfontsize {
+  font-size: 16px;
+}
+.collateralButton {
+  width: 250px;
+  margin-left: 200px;
+  justify-content: end;
+  margin-top: 10px;
+}
+.headerthree {
+  font-size: 20px;
+}
+.maintitle {
+  padding-left: 0px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 748px) {
+  .cardnone{
+    display: none;
+  }
+  .darkBG {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+  }
+  .modal {
+    width: 500px;
+    height: 450px;
+  }
+  .rowContainerCarModal {
+    margin-left: 10%;
+  }
+  .hundredpadding {
+    padding-left: 60px;
+  }
+  .hundredpaddingCar {
+    padding-left: 90px;
+  }
+  .closeBtn {
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 50px;
+    width: 40px;
+    height: 50px;
+    margin-right: 1px;
+  }
+
+  .mainmargin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .maintitle {
+    padding-left: 30px;
+  }
+  .mainmargin2 {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .modalfontsize {
+    font-size: 13px;
+  }
+  .rightcolor {
+    font-size: 16px;
+  }
+  .labelColumn {
+    flex-shrink: 0;
+    width: 100px; /* Adjust the desired width for the label column */
+  }
+
+  .valueColumn {
+    flex-grow: 1;
+  }
+  .collateralButton {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .headerthree {
+    font-size: 14x;
+  }
+  .maintitle {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardnone{
+    display: none;
+  }
+  .darkBG {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+  }
+  .modal {
+    width: 400px;
+    height: 450px;
+  }
+  .modalHeader {
+    height: 40px;
+    background: #f35924;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  .heading {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .closeBtn {
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 50px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .cancelBtn {
+    margin-top: 10px;
+    width: 130px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 11px 28px;
+    font-size: 0.8rem;
+  }
+
+  .rowContainerCarModal {
+    margin-left: 10%;
+  }
+  .mainmargin {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .maintitle {
+    padding-left: 30px;
+  }
+  .mainmargin2 {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .hundredpadding {
+    padding-left: 60px;
+  }
+  .hundredpaddingCar {
+    padding-left: 90px;
+  }
+  .modalfontsize {
+    font-size: 13px;
+  }
+  .rightcolor {
+    font-size: 16px;
+  }
+  .labelColumn {
+    flex-shrink: 0;
+    width: 100px; /* Adjust the desired width for the label column */
+  }
+
+  .valueColumn {
+    flex-grow: 1;
+  }
+  .collateralButton {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  #cards {
+    display: none;
+  }
+  .headerthree {
+    font-size: 14x;
+  }
+  .maintitle {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cardnone{
+    display: none;
+  }
+  .darkBG {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+  }
+  .modal {
+    max-width: 350px;
+    height: 430px;
+  }
+  .rowContainerCarModal {
+    margin-left: 2%;
+  }
+  .mainmargin {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .closeBtn {
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 50px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .cancelBtn {
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    padding: 11px 28px;
+    font-size: 0.7rem;
+  }
+  .maintitle {
+    padding-left: 30px;
+  }
+  .mainmargin2 {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .hundredpadding {
+    padding-left: 60px;
+  }
+  .hundredpaddingCar {
+    padding-left: 90px;
+  }
+  .modalfontsize {
+    font-size: 13px;
+  }
+  .rightcolor {
+    font-size: 16px;
+  }
+  .labelColumn {
+    flex-shrink: 0;
+    width: 100px; /* Adjust the desired width for the label column */
+  }
+
+  .valueColumn {
+    flex-grow: 1;
+  }
+  .collateralButton {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  #cards {
+    display: none;
+  }
+  .headerthree {
+    font-size: 14x;
+  }
+  .maintitle {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,39 @@
+.bank-autocomplete{
+    border: 2px solid #eaebef;
+    border-radius: 6px;
+}
+.addding-wihitespace{
+    white-space: pre;
+}
+.erroremail{
+    font-weight: normal;
+    font-size: 10px;
+    
+}
+.approveemail{
+    color: green;
+}
+.rejectedemail{
+    color: red;
+}
+.addpadding13{
+    padding-left: 13px;
+}
+.reloder{
+    padding-left: 18%;
+}
+input[disabled],
+select[disabled],
+textarea[disabled],
+.disabledNumeric[disabled], .TextField[disabled],
+.autocomplete-input[disabled] {
+  background-color: white !important; /* Change the background color */
+  opacity: 0.6; /* Reduce the opacity */
+  cursor: not-allowed; /* Change the cursor */
+  color:#b3ada9;
+}
+@media (max-width:768px){
+    .displaynonnform{
+        display: none;
+    }
+}

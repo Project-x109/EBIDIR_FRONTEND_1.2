@@ -1,0 +1,272 @@
+.card1 {
+  width: 385px;
+  background: white;
+  color: #343434;
+  position: relative;
+  border-radius: 2.5em;
+  padding: 2em;
+  transition: transform 0.4s ease;
+}
+
+.card1 .card1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5em;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+.headerforloan{
+  margin-top: 0px ;
+  margin-left: 100px;
+}
+.card1 .card1-top,
+.card1 .card1-bottom {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.cardcontainer{
+  margin-top: -20px;
+}
+.card1 .card1-top p,
+.card1 .card1-top .card1-title,
+.card1 .card1-bottom p,
+.card1 .card1-bottom .card1-title {
+  margin: 0;
+}
+
+.card1 .card1-title {
+  font-weight: bold;
+}
+
+.card1 .card1-top p,
+.card1 .card1-bottom p {
+  font-weight: 600;
+}
+
+.card1 .card1-bottom {
+  align-items: flex-end;
+}
+
+.card1 .card1-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.card1 .card1-image svg {
+  width: 4em;
+  height: 4em;
+  transition: transform 0.4s ease;
+}
+
+.card1:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.card1:hover .card1-content {
+  transform: scale(0.96);
+}
+
+.card1:hover .card1-image svg {
+  transform: scale(1.05);
+}
+
+.card1:active {
+  transform: scale(0.9);
+}
+
+.image_value {
+  padding-top: 8px;
+}
+#cardvalue {
+  text-align: right !important;
+}
+#date {
+  text-align: right !important;
+}
+#date2 {
+  padding-left: 100%;
+}
+#cardvalue {
+  padding-top: 10px !important;
+  font-size: medium;
+}
+#cardcontent {
+  padding-top: 10px !important;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+#header6 {
+  padding-top: 5px;
+}
+#summery_of_loans {
+  padding-left: 50% !important;
+}
+#loanlength {
+  padding-left: 5px;
+}
+#iconsizeCard {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+
+
+.admincards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admincards .red {
+  background-color: #e4e9ec;
+}
+
+.admincards .blue {
+  background-color: #e4e9ec;
+}
+
+.admincards .green {
+  background-color: #e4e9ec;
+}
+
+.admincards .yellow {
+  background-color: #e4e9ec;
+}
+
+.admincards .admincard {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+  height: 75px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.admincards .admincard h6.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.admincards .admincard p.second-text {
+  font-size: 0.7em;
+}
+
+.admincards .admincard:hover {
+  transform: scale(1.1, 1.1);
+}
+/* .admincards:hover  .admincard:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+} */
+
+
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  font-size: 15px;
+  left:20em;
+}
+
+.btn-2 {
+  background: #004dff;
+  background: linear-gradient(0deg, #004dff 0%, #004dff 100%);
+  border: none;
+}
+
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+#spacebetwen{
+  padding-left: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  #cards {
+    display: none;
+  }
+  #header4 {
+    font-size: 15px;
+  }
+  #cardheader {
+    font-size: 13px;
+  }
+  #cardcontent {
+    font-size: 11px;
+  }
+  #cardvalue {
+    font-size: 13px;
+  }
+  #tabletitle {
+    font-size: 12px;
+  }
+  .header {
+    white-space: pre;
+  }
+  #value {
+    font-size: 11px;
+  }
+  .image_value {
+    padding-top: 8px;
+  }
+  #cardsize {
+    width: 40%;
+    height: 100%;
+  }
+  #date {
+    font-size: 10px !important;
+  }
+  #date2 {
+    font-size: 10px !important;
+    padding-left: 120%;
+  }
+  .summery_of_loansfont {
+    font-size: medium !important;
+  }
+  .custom-btn {
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    left:0em;
+    white-space:pre;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "short_name": "E-Bidir",
+  "name": "E-Bidir - Credit Scoring and Loan Application",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logonewG192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "background_color":"#ffffff"
+    },
+    {
+      "src": "logonewG512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "background_color":"#ffffff"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "description": "EBidir is a credit scoring and loan Platform.",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

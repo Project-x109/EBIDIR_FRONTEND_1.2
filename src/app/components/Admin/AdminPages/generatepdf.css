@@ -1,0 +1,51 @@
+.generate {
+    width: 10em;
+    position: relative;
+    height: 3.2em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: #e4e9ec;
+    color: #212121;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .generate::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #e4e9ec;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .generate::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #e4e9ec;
+    transition: 0.5s;
+  }
+  
+  .generate:hover::before, .generate:hover::after {
+    transform: scale(0)
+  }
+  
+  .generate:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+  @media screen and (max-width: 800px) {
+    .generate {
+      margin-top: 13%;
+    }
+  }
