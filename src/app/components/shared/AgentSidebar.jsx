@@ -19,6 +19,7 @@ import logout from "../../../assets/images/logout.png";
 import male from "../../../assets/images/male.png";
 import female from "../../../assets/images/female.png";
 import Swal from "sweetalert2";
+import logoMain from "../../../assets/images/clean.svg"
 const AgentSidebar = () => {
   const [active, setActive] = useState(1);
   const [expanded, setExpanded] = useState();
@@ -100,7 +101,7 @@ const AgentSidebar = () => {
         <a className="sidebar-brand brand-logo" href={`/${role}/dashboard`}>
           <img
             style={{ position: "fixed", top: "10px" }}
-            src={require("../../../assets/images/clean.svg")}
+            src={logoMain}
             alt="logo"
           />
         </a>
@@ -108,7 +109,7 @@ const AgentSidebar = () => {
           className="sidebar-brand brand-logo-mini"
           href={`/${role}/dashboard`}
         >
-          <img src={require("../../../assets/images/clean.svg")} alt="logo" />
+          <img src={logoMain} alt="logo" />
         </a>
       </div>
       <ul className="nav">

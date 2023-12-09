@@ -20,6 +20,7 @@ import collateral from "../../../assets/images/collateral.png";
 import request from "../../../assets/images/Request.png";
 import company1 from "../../../assets/images/logocam.png";
 import Swal from "sweetalert2";
+import logoMain from "../../../assets/images/clean.svg"
 const CompanySideBar = () => {
   const [active, setActive] = useState(1);
   const [expanded, setExpanded] = useState();
@@ -89,7 +90,7 @@ const CompanySideBar = () => {
         <a className="sidebar-brand brand-logo" href={`/${"user"}/dashboard`}>
           <img
             style={{ position: "fixed", top: "10px" }}
-            src={require("../../../assets/images/clean.svg")}
+            src={logoMain}
             alt="logo"
           />
         </a>
@@ -97,7 +98,7 @@ const CompanySideBar = () => {
           className="sidebar-brand brand-logo-mini"
           href={`/${"user"}/dashboard`}
         >
-          <img src={require("../../../assets/images/clean.svg")} alt="logo" />
+          <img src={logoMain} alt="logo" />
         </a>
       </div>
       <ul className="nav">

@@ -9,7 +9,8 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { Doughnut, Bar } from "react-chartjs-2";
 import { darkTheme, muiCache } from "../Admin/forms/errorConstants";
 import styles from "./Modle.module.css";
-import { makeStyles } from "@material-ui/core/styles";
+/* import { makeStyles } from "@material-ui/core/styles"; */
+import { styled } from "@mui/system";
 import PDFGenerator from "../Admin/AdminPages/PDFGenerator";
 const AmortizationComponent = ({
   loan_amount,
@@ -22,7 +23,7 @@ const AmortizationComponent = ({
   updateAmortizeBLoan,
   className
 }) => {
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = styled((theme) => ({
     table: {
       "& .MuiTableCell-root": {
         fontSize: "14px", // Default font size
@@ -128,7 +129,7 @@ const AmortizationComponent = ({
     dynamicHeight,
     //tableBodyWidth,
     tableBodyMaxHeight,
-    onTableChange: () => {},
+    onTableChange: () => { },
   };
   const handleCreate = (value) => {
     swal({

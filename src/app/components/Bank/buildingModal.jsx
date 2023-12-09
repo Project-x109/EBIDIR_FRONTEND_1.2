@@ -1,7 +1,8 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
 import { RiCloseLine } from "react-icons/ri";
-import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+/* import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline"; */
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 import styles from "./Modle.module.css";
 

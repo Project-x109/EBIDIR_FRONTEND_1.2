@@ -57,6 +57,7 @@ const Login = () => {
     if (error &&!("Please Login to Access"==error)) {
       Swal.fire({
         title: "" + error,
+        icon:"error",
         type: "error",
         text: error + " try again",
         background: "pink",
@@ -67,6 +68,7 @@ const Login = () => {
       if (login && login.status === "waiting") {
         Swal.fire({
           title: "Change Password",
+          icon:"warning",
           type: "warning",
           text: "To activate your account change password",
           background: "pink",
@@ -76,6 +78,7 @@ const Login = () => {
       } else if (login && login.status === "inactive") {
         Swal.fire({
           title: "Account Dormant",
+          icon:"warning",
           type: "warning",
           text: "Contact Adminstrator To fix issue",
           background: "pink",
@@ -97,6 +100,7 @@ const Login = () => {
   const handleFacebookClick = () => {
     Swal.fire({
       title: "Login With FaceBook",
+      icon:"warning",
       type: "warning",
       text: "FaceBook  Login is Currently Not supported",
       background: "white",
@@ -105,6 +109,7 @@ const Login = () => {
   const handleGoogleClick = () => {
     Swal.fire({
       title: "Login With Google",
+      icon:"warning",
       type: "warning",
       text: "Google  Login is Currently Not supported",
       background: "white",
@@ -113,6 +118,7 @@ const Login = () => {
   const handleTwitterClick = () => {
     Swal.fire({
       title: "Login With Twitter",
+      icon:"warning",
       type: "warning",
       text: "Twitter Login is Currently Not supported",
       background: "white",
@@ -121,6 +127,7 @@ const Login = () => {
   const handleGitHubClick = () => {
     Swal.fire({
       title: "Login With Github",
+      icon:"warning",
       type: "warning",
       text: "Github Login is Currently Not supported",
       background: "white",
@@ -129,6 +136,7 @@ const Login = () => {
   const handleCreate = () => {
     Swal.fire({
       title: "Create Account",
+      icon:"warning",
       type: "warning",
       text: "Contact Adminstrator To Create New Account  0712763618  / support@e-bidir.com",
       background: "white",

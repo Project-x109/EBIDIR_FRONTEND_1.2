@@ -546,7 +546,7 @@ export const MoneyStatus = (loans, bloans, totalMoney) => {
         <div className="card-body">
           <h4 className="card-title">Summary of Loans</h4>
           <div id="cards" className="aligner-wrapper">
-            <Doughnut data={doughnutPieData} options={doughnutPieOptions} />
+            <Doughnut data={doughnutPieData} options={doughnutPieOptions} height={200} width={300} />
             <div className="absolute center-content">
               <br></br>
               <br></br>

@@ -14,6 +14,7 @@ import loanStatus from "../../../assets/images/loanstatus.png";
 import users from "../../../assets/images/users.png";
 import usersmain from "../../../assets/images/usermain.png";
 import logout from "../../../assets/images/logout.png";
+import logo from "../../../assets/images/clean.svg"
 import Swal from "sweetalert2";
 const Sidebar = () => {
   const [active, setActive] = useState(1);
@@ -106,14 +107,14 @@ const Sidebar = () => {
       <div className="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a className="sidebar-brand brand-logo" href={`/${login?.role}/dashboard`}>
           <img
-            style={{ position: "fixed", top: "10px"}}
-            src={require("../../../assets/images/clean.svg")}
+            style={{ position: "fixed", top: "10px" }}
+            src={logo}
             alt="logo"
           />
         </a>
         <a className="sidebar-brand brand-logo-mini" href={`/${login?.role}/dashboard`}>
           <img
-            src={require("../../../assets/images/clean.svg")}
+            src={logo}
             alt="logo"
           />
         </a>

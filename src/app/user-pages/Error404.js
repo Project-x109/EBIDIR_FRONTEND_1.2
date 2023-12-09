@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../auth/useAuth";
-import { Button } from "@material-ui/core";
+/* import { Button } from "@material-ui/core"; */
+import Button from '@mui/material/Button';
 import { GetUser } from "../../Actions/UserAction";
 import { useDispatch } from "react-redux";
 const Error404 = () => {

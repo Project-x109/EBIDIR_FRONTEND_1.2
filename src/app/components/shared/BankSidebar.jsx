@@ -22,6 +22,8 @@ import helpcenter from "../../../assets/images/profile.png";
 import profile from "../../../assets/images/helpcenter.png";
 import logout from "../../../assets/images/logout.png";
 import Swal from 'sweetalert2';
+import logoMain from "../../../assets/images/clean.svg"
+
 const BankSidebar = () => {
   const [active, setActive] = useState(1);
   const history = useNavigate();
@@ -146,13 +148,13 @@ const BankSidebar = () => {
         <a className="sidebar-brand brand-logo"  href={`/${login?.role}/dashboard`}>
           <img
             style={{ position: "fixed", top: "10px" }}
-            src={require("../../../assets/images/clean.svg")}
+            src={logoMain}
             alt="logo"
           />
         </a>
         <a className="sidebar-brand brand-logo-mini"  href={`/${login?.role}/dashboard`}>
           <img
-            src={require("../../../assets/images/clean.svg")}
+            src={logoMain}
             alt="logo"
           />
         </a>
