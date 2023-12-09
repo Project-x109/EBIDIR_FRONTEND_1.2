@@ -1,5 +1,7 @@
 import axios from "axios";
 import { ADD_CAR_FAIL, ADD_CAR_REQUEST, ADD_CAR_SUCCESS, ALL_CAR_FAIL, ALL_CAR_REQUEST, ALL_CAR_SUCCESS, GET_CAR_FAIL, GET_CAR_REQUEST, GET_CAR_SUCCESS, GET__MYCAR_FAIL, GET__MYCAR_REQUEST, GET__MYCAR_SUCCESS, LOAN_CAR_FAIL, LOAN_CAR_REQUEST, LOAN_CAR_SUCCESS } from "../Constants/CarConstants";
+
+axios.defaults.baseURL = 'https://ebidirbackend.onrender.com';
 export const addcar = (carData) => async (dispatch) => {
     try {
         dispatch({ type: ADD_CAR_REQUEST});

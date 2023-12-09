@@ -1,6 +1,6 @@
 import axios from "axios"
 import { APPLICATIONSTATUS_FAIL, APPLICATIONSTATUS_REQUEST, APPLICATIONSTATUS_SUCCESS, GET_APPLICATIONSTATUS_FAIL, GET_APPLICATIONSTATUS_REQUEST, GET_APPLICATIONSTATUS_SUCCESS } from "../Constants/SystemConstants"
-
+axios.defaults.baseURL = 'https://ebidirbackend.onrender.com';
 export const ApplicationStatus=(appInfo)=>async(dispatch)=>{
     try{
     const config = {

@@ -52,6 +52,7 @@ import {
   UPDATE_LOAN_REQUEST,
   UPDATE_LOAN_SUCCESS,
 } from "../Constants/LoanConstants";
+axios.defaults.baseURL = 'https://ebidirbackend.onrender.com';
 export const addLoan = (userData) => async (dispatch) => {
   try {
     dispatch({ type: REGISTER_LOAN_REQUEST });
