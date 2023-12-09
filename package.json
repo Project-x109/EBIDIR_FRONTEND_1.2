@@ -1,7 +1,7 @@
 {
   "name": "ebidir",
   "version": "1.1.0",
-  "homepage": "https://ebidirfrontend.netlify.app",
+  "homepage": "https://ebidirbackend.onrender.com",
   "proxy": "https://ebidirbackend.onrender.com",
   "private": true,
   "dependencies": {
