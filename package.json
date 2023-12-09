@@ -1,8 +1,8 @@
 {
   "name": "ebidir",
   "version": "1.1.0",
-  "homepage": "http://127.0.0.1:3000",
-  "proxy": "http://127.0.0.1:4000",
+  "homepage": "https://ebidirfrontend.netlify.app",
+  "proxy": "https://ebidirbackend.onrender.com",
   "private": true,
   "dependencies": {
     "@chakra-ui/accordion": "^2.3.0",
